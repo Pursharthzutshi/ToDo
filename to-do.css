@@ -1,0 +1,66 @@
+body{
+    margin:0px;
+    font-family:Helvetica;
+}
+
+#demo{
+    font-size:23px;
+}
+
+.bigger-box{
+    position: relative;
+    left:605px;
+    background:whitesmoke;
+    width:380px;
+    height:340px;
+    box-shadow:13px 5px 6px ;
+
+}
+
+#button-1,#button-2{
+    text-decoration:none;
+    color:black;
+    background:whitesmoke;
+    padding: 10px;
+    border:2px solid black;
+    border-radius:100px;
+    font-size:27px;
+    margin-left:950px;
+    margin-top:-200px;
+
+}
+
+#button-2{
+    margin-left:-380px;
+}
+
+#button-1:hover,#button-2:hover{
+    background:lightgray;
+    
+}
+
+textarea{
+    margin-left:625px;
+    margin-top:250px;
+    width:350px;
+    padding:30px;
+    background:;
+    border:3px solid black;
+}
+
+textarea:hover{
+    transform:scale(1.1);
+    background:whitesmoke;
+    transition: .2s;
+
+
+}
+
+.to-do-section{
+
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0.1)),url('do_more-wallpaper-1440x900.jpg') ;
+    background-position: center;
+    background-size:cover;
+    height:110vh;
+
+}

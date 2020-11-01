@@ -1,0 +1,89 @@
+<html>
+
+    <head>
+
+        <link rel='stylesheet' type='text/css' href='to-do.css'>
+
+        <body>
+
+            <section class='to-do-section'>
+
+                <div id='box-1'>
+
+                    <textarea type='text'></textarea>
+
+                    <div class='bigger-box'>
+
+                        <p id='demo'>  </p>
+
+                        <p id='demo-underline'>  </p>
+
+
+                    </div>
+
+                    <br>
+
+                    <div id='box'>
+
+                        <a onclick='updateValue()' href='#' id='button-1'>+</a>
+
+                        <a onclick='clearValue()' href='#' id='button-2'>-</a>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </body>
+
+        <script>
+
+
+            const textarea = document.querySelector('textarea');
+
+            const para =  document.getElementById('demo');  
+
+
+            textarea.addEventListener('change',updateValue);
+
+
+
+            function updateValue(e){
+
+                demo.textContent = e.target.value;
+
+
+
+                demo.style.color='black';
+                demo.style.background='white';
+                demo.style.whiteSpace='pre-line';
+                demo.style.width = '370px';
+                demo.style.height = '20px';
+                demo.style.padding = '5px';
+                demo.stye.borderStyle='solid';
+                demo.stye.borderColor='black';
+                demo.stye.borderWidth='2px';
+                demo.style.boxShadow='4px 2px 2px ';
+                demo.style.fontSize='30px';
+
+            }
+
+
+
+            function clearValue(){
+                demo.textContent='';
+                demo.style.visibility='hidden';
+                demo.style.background='whitesmoke';
+            }
+
+
+
+
+
+        </script>
+
+    </head>
+
+</html>
